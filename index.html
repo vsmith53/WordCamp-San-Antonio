@@ -45,7 +45,7 @@
     <h1 class="display-4">WordCamp San Antonio</h1>
     <p class="lead">A One-day Conference About WordPress</p>
     <div class="mt-5">
-  	<button type="button" class="btn btn-secondary btn-lg">Register Now</button>
+  	<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
   	<a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 	</div>
   </div>
@@ -71,14 +71,15 @@
       </div>
       <div class="col-lg order-lg-3">
         <h3>What You'll Learn</h3>
-        <ul>
-          <li><strong>WordPress 5</strong>: New Gutenberg editor</li>
-          <li><strong>WooCommerce</strong>: E-commerce platform</li>
-          <li><strong>Hosting</strong>: Managed web hosting</li>
-          <li><strong>Themes</strong>: Creating your theme</li>
-          <li><strong>Plugins</strong>: Develop your plugin</li>
-          <li><strong>Content</strong>: Writing and podcasts</li>
-        </ul>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
+          <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>
+          <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a>
+          <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a>
+          <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a>
+          <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>
+</div>
+
       </div>
     </div>
     <!-- /about -->
@@ -88,68 +89,118 @@
 	<div class="row">
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/wSLhDg4/Andy-Dwyer.png" alt="Image of Andy Dwyer">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">Andy Dwyer</h4>
+    		<p class="card-text">AKA Burt Macklin, FBI and star of Johnny Karate. Indianapolis Colts #1 Fan. Shoeshine extraordinaire. Highest written grade in the police academy. Lead singer and guitarist in his band "MouseRat" and husband to April Ludgate.  </p>
   			</div>
 			</div>
   		</div>
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/Kb3mB92/April-Ludgate.png" alt="Image of April Ludgate">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">April Ludgate</h4>
+    		<p class="card-text">April Ludgate was born in Björk’s house in Iceland and grew up on Easter Island, where her parents were giant stoneheads. She has the ability to fire beams of tacos out of her hands and she can turn her legs into tigers. </p>
   			</div>
 			</div>
   		</div>
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/nLY5tk1/Ben-Wyatt.png" alt="Image of Ben Wyatt">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">Ben Wyatt</h4>
+    		<p class="card-text">From Partridge, Minnesota. Ran for mayor at 18 and impeached within two months due to Ice Town fiasco. Later, becoming an accountant for the state of Indiana. Creator of supergeek game <i>The Cones of Dunshire.</i></p>
   			</div>
 			</div>
   		</div>
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/JBDG5qT/Chris-Traeger.png" alt="Image of Chris Traeger">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">Chris Traeger</h4>
+    		<p class="card-text">Former Indiana state government auditor. City manager of Pawnee, Indiana. Wants to be the first person to live to 150 years old and plans to accomplish that through rigorous diet and exercise. Has only 2.8% body fat. Runs 10 miles during his lunch break alone</p>
   			</div>
 			</div>
   		</div>
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/j5dFc8R/Leslie-Knope.png" alt="Image of Leslie Knope">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">Leslie Knope</h4>
+    		<p class="card-text">Summa cum laude from Indiana University's School of Public and Enviromental Affairs (SPEA) and founded Pawnee North High School's Model United Nations, Debate Club, Mock Trial, Young Republicans, Young Democrats and Young Independents. </p>
   			</div>
 			</div>
   		</div>
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://via.placeholder.com/800x450.png" alt="Speaker Name">
+  			<img class="card-img-top" src="https://i.ibb.co/rwQtsFq/Ron-Swanson.png" alt="Image of Ron Swanson">
   			<div class="card-body">
-    		<h4 class="card-title">Speaker Name</h4>
-    		<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+    		<h4 class="card-title">Ron Swanson</h4>
+    		<p class="card-text">AKA Duke Silver. Noted wood worker and staunch libertarian. Loves breakfast foods and red meats. Strongly believes clear alcohols are for rich women on diets. Has only cried twice: once when he was hit by a school bus at age 7; secondly when Li'l Sebastian died.</p>
   			</div>
 			</div>
   		</div>
 	</div>
 <!-- /speakers -->
 
-    <!-- schedule -->
-      <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-        [Conference schedule goes here]
-    <!-- /schedule -->
+<!-- schedule -->
+<h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<ul class="list-group">
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Chris Traeger</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">WooCommerce Basics</h5>
+      <span class="badge badge-pill badge-secondary p-2">10:00am</span>
+    </div>
+    <p class="mb-1">Ron Swanson</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">WPEngine & Flywheel</h5>
+      <span class="badge badge-pill badge-secondary p-2">11:00am</span>
+    </div>
+    <p class="mb-1">Leslie Knope</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Lunch</h5>
+      <span class="badge badge-pill badge-secondary p-2">12:00pm</span>
+    </div>
+    <p class="mb-1">Lunch catered by JJ's Diner!</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Creating your Theme</h5>
+      <span class="badge badge-pill badge-secondary p-2">1:00pm</span>
+    </div>
+    <p class="mb-1">April Ludgate</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Developing a Plugin</h5>
+      <span class="badge badge-pill badge-secondary p-2">2:00pm</span>
+    </div>
+    <p class="mb-1">Ben Wyatt</p>
+  </li>
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Creating great Content and Podcasts</h5>
+      <span class="badge badge-pill badge-secondary p-2">3:00pm</span>
+    </div>
+    <p class="mb-1">Andy Dwyer</p>
+  </li>
+</ul>
+<!-- /schedule -->
 
     <!-- callout button -->
-<button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>  
+<button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>  
 	<!-- /callout button -->
     
     </div>
@@ -173,6 +224,27 @@
       </div>
   <hr>
 <!-- /signup form -->
+
+<!-- Modal -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register for WordCamp Conference</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- footer -->

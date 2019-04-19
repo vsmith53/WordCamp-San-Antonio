@@ -1,0 +1,63 @@
+body {
+	background-color: ;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron-fluid {
+
+	height: 70vh;
+
+	display: flex;
+	align-items: center;
+	background-image: url("https://i.ibb.co/mqRd79r/Exterior-Main-HERO.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	}
+
+h1 {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+h2 {
+	color: #7F4B98;
+
+}
+
+.lead {
+	color: #ffffff;
+}
+
+
+#about-section {
+	color: #ffffff;
+}
+
+
+#event-speakers {
+	color: #ffffff;
+}
+
+#learn h3 {
+	color: #ffffff;
+}
+
+#presented-by {
+	color: #7F4B98;
+}
+
+.badge-pill {
+	background-color: #7F4B98;
+}
+
+#about-nvc {
+	color: #ffffff;
+}
+
+.#button-style { 
+	background-color: #7F4B98;
+	color: #ffffff;
+ }

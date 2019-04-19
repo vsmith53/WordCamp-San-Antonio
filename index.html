@@ -8,14 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>WordCamp San Antonio</title>
   </head>
 
-  <body id="home" data-spy="scroll" data-target=".navbar">
+  <body class="bg-dark" id="home" data-spy="scroll" data-target=".navbar">
   <!-- navbar -->
-  	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  	<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top transparent">
   <div class="container">
-    <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
+    <a class="navbar-brand order-1 mr-0" href="#" target="_blank" id="presented-by">Presented by NVC</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,20 +44,20 @@
   <!-- jumbotron -->
   <div class="jumbotron jumbotron-fluid bg-light">
   <div class="container text-sm-center pt-5">
-    <h1 class="display-4">WordCamp San Antonio</h1>
+    <h1>WordCamp San Antonio</h1>
     <p class="lead">A One-Day Conference About WordPress</p>
     <div class="mt-5">
-  	<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
+  	<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register" id="button-style">Register Now</button>
   	<a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 	</div>
   </div>
 </div>
-	<!-- /jumnbotron -->
+	<!-- /jumbotron -->
 	
-<div class="container pt-4">
+<div class="container pt-4 bg-dark">
   <!-- about -->
     <div class="row" id="about">
-      <div class="col-lg order-lg-2">
+      <div class="col-lg order-lg-2" id="about-section">
         <h3 class="mb-4">About WordCamp</h3>
 
         <img class="img-fluid rounded" src="https://i.ibb.co/nCKVCwX/sanantonioskyline.png" alt="Photo of San Antonio, TX">
@@ -63,21 +65,21 @@
         <p>The beautiful city of San Antonio, TX will be the host city for WordCamp!</p>
         <p>Explore the future of WordPress with a lineup of industry professionals. Discover new techniques to advance your career as a web designer.</p>
       </div>
-      <div class="col-lg order-lg-1">
+      <div class="col-lg order-lg-1" id="event-speakers">
         <h3>Expert Speakers</h3>
         <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
         <p>Want to meet the international WordPress community and share skills with some of the world's top experts and makers? Be the first to know what to expect for the future of WordPress.</p>
         <p>WordCamp is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
       </div>
-      <div class="col-lg order-lg-3">
+      <div class="col-lg order-lg-3" id="learn">
         <h3>What You'll Learn</h3>
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
-          <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>
-          <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a>
-          <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a>
-          <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a>
-          <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>WordPress 5</strong>: New Gutenberg editor</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>WooCommerce</strong>: E-commerce platform</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>Hosting</strong>: Managed web hosting</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>Themes</strong>: Creating your theme</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>Plugins</strong>: Develop your plugin</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><strong>Content</strong>: Writing and podcasts</a>
         </div>
 
       </div>
@@ -85,11 +87,11 @@
     <!-- /about -->
 
      <!-- speakers -->
-	<h2 id="speakers" id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+	<h2 id="speakers" class="display-4 text-center my-5">Speakers</h2>
 	<div class="row">
   		<div class="col-md-6 col-lg-4">
   			<div class="card mb-3">
-  			<img class="card-img-top" src="https://i.ibb.co/wSLhDg4/Andy-Dwyer.png" alt="Image of Andy Dwyer">
+  			<img class="card-img-top img-circle" src="https://i.ibb.co/wSLhDg4/Andy-Dwyer.png" alt="Image of Andy Dwyer">
   			<div class="card-body">
     		<h4 class="card-title">Andy Dwyer</h4>
     		<p class="card-text">AKA Burt Macklin, FBI and star of Johnny Karate. Indianapolis Colts #1 Fan. Shoeshine extraordinaire. Highest written grade in the police academy. Lead singer and guitarist in his band "MouseRat" and husband to April Ludgate.  </p>
@@ -128,7 +130,8 @@
   			<img class="card-img-top" src="https://i.ibb.co/j5dFc8R/Leslie-Knope.png" alt="Image of Leslie Knope">
   			<div class="card-body">
     		<h4 class="card-title">Leslie Knope</h4>
-    		<p class="card-text">Summa cum laude from Indiana University's School of Public and Enviromental Affairs (SPEA) and founded Pawnee North High School's Model United Nations, Debate Club, Mock Trial, Young Republicans, Young Democrats and Young Independents. </p>
+    		<p class="card-text">Summa cum laude from Indiana University's School of Public and Enviromental Affairs (SPEA) and founded Pawnee North High School's Model United Nations, Debate Club, Mock Trial, Young Republicans, Young Democrats and Young Independents. Some would say high spirited.
+        </p>
   			</div>
 			</div>
   		</div>
@@ -145,51 +148,51 @@
 <!-- /speakers -->
 
 <!-- schedule -->
-<h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<h2 id="schedule" class="display-4 text-center my-5">Schedule</h2>
 <ul class="list-group">
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
       <span class="badge badge-pill badge-secondary p-2">9:00am</span>
     </div>
     <p class="mb-1">Chris Traeger</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">WooCommerce Basics</h5>
       <span class="badge badge-pill badge-secondary p-2">10:00am</span>
     </div>
     <p class="mb-1">Ron Swanson</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">WPEngine & Flywheel</h5>
       <span class="badge badge-pill badge-secondary p-2">11:00am</span>
     </div>
     <p class="mb-1">Leslie Knope</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Lunch</h5>
       <span class="badge badge-pill badge-secondary p-2">12:00pm</span>
     </div>
     <p class="mb-1">Lunch catered by JJ's Diner!</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Creating your Theme</h5>
       <span class="badge badge-pill badge-secondary p-2">1:00pm</span>
     </div>
     <p class="mb-1">April Ludgate</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Developing a Plugin</h5>
       <span class="badge badge-pill badge-secondary p-2">2:00pm</span>
     </div>
     <p class="mb-1">Ben Wyatt</p>
   </li>
-  <li class="list-group-item">
+  <li class="list-group-item list-group-item-dark">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Creating great Content and Podcasts</h5>
       <span class="badge badge-pill badge-secondary p-2">3:00pm</span>
@@ -207,7 +210,7 @@
 
 <!-- signup form -->
     <hr>
-      <div class="row py-4 text-muted">
+      <div class="row py-4" id="about-nvc">
         <div class="col-md col-xl-5">
           <p><strong>About Northwest Vista College</strong></p>
           <p>Northwest Vista College brings affordable technology education to people everywhere to help them achieve their dreams and change the world.</p>
@@ -217,7 +220,7 @@
         <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
         <div class="input-group-append">
-        <button class="btn btn-secondary" type="button" id="button-addon2">Sign up</button>
+        <button class="btn btn-secondary" type="button" id="button-addon2" >Sign up</button>
         </div>
         </div>
       </div>
@@ -375,7 +378,7 @@
   </div>
   <hr>
   <div class="form-group">
-        <button type="submit" class="btn btn-dark">Register</button>
+        <button type="submit" class="btn btn-secondary">Register</button>
       </div>
 </form>
       </div>
